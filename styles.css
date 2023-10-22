@@ -1,0 +1,17 @@
+body{
+  background-image: url('https://static.zerochan.net/Love.Money.Rock%27n%27Roll.full.2548298.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+#demo{
+	width: 70%;
+    margin: 0 auto;
+}
+#pc{
+	width: 100%;
+	padding: 10px;
+}
+.ogs{
+	font-family: 'Minecraft', sans-serif;
+}
