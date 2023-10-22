@@ -15,3 +15,8 @@ body{
 .ogs{
 	font-family: 'Minecraft', sans-serif;
 }
+
+.timer, #countdown{
+    margin-top: 10px;
+    text-align: center;
+}

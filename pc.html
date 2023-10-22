@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="form-validation.js"></script>
     <link rel="icon" type="image/x-icon" href="https://vectorified.com/image/joystick-icon-vector-14.jpg">
     <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
     <style>
@@ -33,6 +34,9 @@
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="pc.html">PC</a></li>
                     <li><a class="dropdown-item" href="console.html">Console</a></li>
+                    <li><a class="dropdown-item" href="ToDolist.html">To-do-list</a></li>
+                    <li><a class="dropdown-item" href="abc.html">Timer2</a></li>
+
                 </ul>
             </li>
         </ul>
@@ -314,16 +318,22 @@
 </div>
 <div class="container p-5 my-5 bg-primary rounded">
     <h1 class="h1 text-white">Support</h1>
-    <form action="/action_page.php">
+    <form action="/action_page.php" id="myForm">
         <div class="mb-3 mt-3">
             <label for="email" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+            <span class="error" id="emailError"></span><br>
+
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+            <span class="error" id="passwordError"></span><br>
+
         </div>
         <div class="mb-3">
             <label for="comment">Comments:</label>
             <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary border">Submit</button>
+        <input type="submit" value="Submit">
     </form>
 </div>
 </body>
